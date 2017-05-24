@@ -112,7 +112,7 @@ if [ -e "${METEOR_DIR}" ]; then
    # Bundle the Meteor app
    echo "Building the bundle...(this may take a while)"
    mkdir -p ${APP_DIR}
-   meteor build --directory ${APP_DIR}
+   meteor build --server-only --directory ${APP_DIR}
 fi
 
 # If we were given a BUNDLE_FILE, extract the bundle
